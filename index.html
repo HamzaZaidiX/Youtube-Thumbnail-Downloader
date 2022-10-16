@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>YouTube Thumbnail Downloader 🖼️</title>
+    <link type="image/x-icon" sizes="192" rel="icon" href="favicon.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis:500"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar container-fluid site-gradient text-center" id="nav">
+      <a style="outline: none" id="header-links">
+        <img class="logo" src="favicon.svg" alt="logo" />
+        <h1 id="header">YOUTUBE THUMBNAIL DOWNLOADER</h1>
+      </a>
+      <div class="github-icon">
+        <a href="https://github.com/HamzaZaidiX" target="_blank"
+          ><img
+            src="https://img.icons8.com/material-sharp/30/000000/github.png"
+        /></a>
+      </div>
+    </nav>
+    <br />
+    <div class="container text-center" id="main">
+      <div id="result" class="hidden">
+        <!-- THUMBNAIL PREVIEW -->
+        <img
+          class="shadow"
+          id="thumbnailpreview"
+          src="images/placeholder.gif"
+        />
+        <hr style="width: 50vw" />
+        <!-- INPUT AREA -->
+        <div class="input-group">
+          <input
+            id="ytlink"
+            autofocus
+            type="text"
+            class="form-control shadow"
+            placeholder="ENTER A YOUTUBE VIDEO URL HERE"
+            spellcheck="false"
+            onsubmit="youtube_thumbnail_downloader(ytlink.value);ShowMain()"
+            autocomplete="off"
+          />
+        </div>
+        <button
+          id="thumbdloadbtn"
+          class="thumbdloadbtn site-gradient"
+          type="button"
+          onclick="youtube_thumbnail_downloader(ytlink.value);ShowMain()"
+        >
+          <img
+            class="icon-download"
+            src="https://img.icons8.com/color/344/download--v1.png"
+          />
+          DOWNLOAD
+        </button>
+
+        <!-- Download Buttons -->
+        <div id="download-buttons">
+          <a target="_blank" id="thumbnailhd" download
+            ><button class="thumbdloadbtn site-gradient shadow">
+              <img
+                src="https://img.icons8.com/doodle/344/picture.png"
+                class="icon-btn"
+              />
+              HIGH QUALITY
+            </button></a
+          >
+          <br />
+          <a target="_blank" id="thumbnailmd" download
+            ><button class="thumbdloadbtn site-gradient shadow">
+              <img
+                src="https://img.icons8.com/doodle/344/picture.png"
+                class="icon-btn"
+              />
+              MEDIUM QUALITY
+            </button></a
+          >
+          <br />
+          <a target="_blank" id="thumbnaillow" download
+            ><button class="thumbdloadbtn site-gradient shadow">
+              <img
+                src="https://img.icons8.com/doodle/344/picture.png"
+                class="icon-btn"
+              />
+              LOW QUALITY
+            </button></a
+          >
+          <br />
+          <a onclick="location.reload();"
+            ><button class="thumbdloadbtn site-gradient shadow">
+              <img
+                src="https://img.icons8.com/office/344/refresh--v1.png"
+                class="icon-btn"
+              />
+              RELOAD
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+     <div class="ftr container-fluid site-gradient text-center" style="text-align: center;">
+        <footer>Crafted with ❤️ by <span> <a href="https://github.com/HamzaZaidiX" target="_blank">Hamza Zaidi</a></span>
+    </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
