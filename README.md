@@ -2,7 +2,7 @@
 
 **YouTube Thumbnail Downloader is built with `HTML, CSS & JAVASCRIPT` an Amazing website where you can Download any Youtube Video that has a Thumbnail simply `Copy the URL` and `PASTE the Url` on site and you can Download any `High`, `Medium` & `low Quality Thumbnail`.**
 
-<h2 align="center"><a href="/">LIVE DEMO 📸</a><h2>
+<h2 align="center"><a href="https://youtube-thumbnail-downloader-shjz.vercel.app/" target="_blank">LIVE DEMO 📸</a><h2>
 
 ### Screenshots:
 
